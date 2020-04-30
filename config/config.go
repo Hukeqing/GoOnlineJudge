@@ -49,6 +49,7 @@ const (
 	LanguageC    = 1 //C
 	LanguageCPP  = 2 //C++
 	LanguageJAVA = 3 //Java
+	LanguagePYTHON = 4 //Python
 )
 
 const (

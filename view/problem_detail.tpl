@@ -60,7 +60,7 @@
         <option value="1" {{if eq $compiler_id "1"}}selected="selected"{{end}}>C</option>
         <option value="2" {{if eq $compiler_id "2"}}selected="selected"{{end}}>C++</option>
         <option value="3" {{if eq $compiler_id "3"}}selected="selected"{{end}}>Java</option>
-
+		<option value="4" {{if eq $compiler_id "4"}}selected="selected"{{end}}>Python</option>
       </select>
       <font  id="warning" color="red"></font>
     </div>
@@ -80,7 +80,8 @@
 
   <script type="text/javascript">
   var editor;
-  function show_submission() {
+  function show_submission() 
+  {
     $('#submission').show();
     $('#submission_link').hide();
     editor = CodeMirror.fromTextArea(document.getElementById("code"), {
@@ -91,14 +92,16 @@
     set_mode();
     toggle_editor();
   };
-  $('#problem_submit').submit(function(e) {
+  $('#problem_submit').submit(function(e) 
+  {
     $('#code').val(editor.getValue());
     e.preventDefault();
     $.ajax({
       type:'POST',
       url:'/problems/{{.Pid}}',
       data:$(this).serialize(),
-      error: function(XMLHttpRequest) {
+      error: function(XMLHttpRequest) 
+	  {
         if(XMLHttpRequest.status == 401){
           alert('Please Sign In.');
           window.location.href = '/sess';
@@ -132,7 +135,7 @@
   function set_mode() {
     var compiler=$('#compiler_id option:selected').text();
     var modes=[ 
-    'Javascript', 'Haskell', 'Lua', 'Pascal', 'Python', 'Ruby', 'Scheme', 'Smalltalk', 'Clojure',
+    'Javascript', 'Haskell', 'Lua', 'Pascal', ['Python','text/x-python'], 'Ruby', 'Scheme', 'Smalltalk', 'Clojure',
     ['PHP', 'text/x-php'],
     ['C', 'text/x-csrc'],
     ['C++', 'text/x-c++src'],

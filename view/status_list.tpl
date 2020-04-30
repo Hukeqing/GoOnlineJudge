@@ -25,6 +25,7 @@
       <option value="1" {{if .SearchLanguage1}}selected{{end}}>C</option>
       <option value="2" {{if .SearchLanguage2}}selected{{end}}>C++</option>
       <option value="3" {{if .SearchLanguage3}}selected{{end}}>Java</option>
+	  <option value="4" {{if .SearchLanguage4}}selected{{end}}>Python</option>
     </select>
   <input name="commit" type="submit" value="Go" style="margin-left:10px">
 </form>
