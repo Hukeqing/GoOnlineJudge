@@ -5,27 +5,27 @@ GoOnlineJudge is an ACM/ICPC online judge platform.
 [**Demo**](http://acm.zjgsu.edu.cn)
 
 ## Contents
-+ [Installation](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#installation)
-	+ [Prerequisites](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#prerequisites)
-	+ [Docker](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#docker)
-	+ [Quick Start](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#quick-start)
-	+ [Manual Installation](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#manual-installation)
-	+ [Tips](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#tips)
-+ [Maintainers](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#maintainers)
-+ [Contributions](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#contributions)
-+ [Roadmap](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#roadmap)
-+ [License](https://github.com/ZJGSU-Open-Source/GoOnlineJudge#license)
++ [Installation](https://github.com/ZJGSU-ACM/GoOnlineJudge#installation)
+	+ [Prerequisites](https://github.com/ZJGSU-ACM/GoOnlineJudge#prerequisites)
+	+ [Docker](https://github.com/ZJGSU-ACM/GoOnlineJudge#docker)
+	+ [Quick Start](https://github.com/ZJGSU-ACM/GoOnlineJudge#quick-start)
+	+ [Manual Installation](https://github.com/ZJGSU-ACM/GoOnlineJudge#manual-installation)
+	+ [Tips](https://github.com/ZJGSU-ACM/GoOnlineJudge#tips)
++ [Maintainers](https://github.com/ZJGSU-ACM/GoOnlineJudge#maintainers)
++ [Contributions](https://github.com/ZJGSU-ACM/GoOnlineJudge#contributions)
++ [Roadmap](https://github.com/ZJGSU-ACM/GoOnlineJudge#roadmap)
++ [License](https://github.com/ZJGSU-ACM/GoOnlineJudge#license)
 
 ## Installation
 ### Prerequisites
 
 **Disclaimer**:
 
-GoOnlineJudge works best on GNU/Linux and has been tested on Ubuntu 14.04+. Windows and Mac OS X are **not** recommended because [**RunServer**](https://github.com/ZJGSU-Open-Source/RunServer) cannot be built on both of them. 
+GoOnlineJudge works best on GNU/Linux and has been tested on Ubuntu 14.04+. Windows and Mac OS X are **not** recommended because [**RunServer**](https://github.com/ZJGSU-ACM/RunServer) cannot be built on both of them. 
 
 ### Docker
 
-If you are Windows or Mac OS X user, you can try out [docker-oj](https://github.com/ZJGSU-Open-Source/docker-oj), based on docker image and works out of the box.
+If you are Windows or Mac OS X user, you can try out [docker-oj](https://github.com/ZJGSU-ACM/docker-oj), based on docker image and works out of the box.
 
 ### Quick Start
 
@@ -35,7 +35,7 @@ GoOnlineJudge is installed by running the following commands in your terminal. Y
 
 #### via curl
 ```bash
-curl -sSL https://raw.githubusercontent.com/ZJGSU-Open-Source/GoOnlineJudge/master/install.sh | sh
+curl -sSL https://raw.githubusercontent.com/ZJGSU-ACM/GoOnlineJudge/master/install.sh | sh
 ```
 
 ### Manual Installation
@@ -57,7 +57,7 @@ curl -sSL https://raw.githubusercontent.com/ZJGSU-Open-Source/GoOnlineJudge/mast
   + API documentation is available on [godoc](http://godoc.org/gopkg.in/mgo.v2)
 
 + [flex](http://flex.sourceforge.net/)
-  + flex is the lexical analyzer used in [**RunServer**](https://github.com/ZJGSU-Open-Source/RunServer).
+  + flex is the lexical analyzer used in [**RunServer**](https://github.com/ZJGSU-ACM/RunServer).
   + Get flex using following command if you are running Ubuntu.
   ```bash
   sudo apt-get install flex
@@ -92,9 +92,9 @@ curl -sSL https://raw.githubusercontent.com/ZJGSU-Open-Source/GoOnlineJudge/mast
 
 Obtain latest version via `git`, source codes will be in your $GOPATH/src. 
 ```bash
-git clone https://github.com/ZJGSU-Open-Source/GoOnlineJudge.git $GOPATH/src/GoOnlineJudge
-git clone https://github.com/ZJGSU-Open-Source/RunServer.git $GOPATH/src/RunServer
-git clone https://github.com/ZJGSU-Open-Source/vjudger.git $GOPATH/src/vjudger
+git clone https://github.com/ZJGSU-ACM/GoOnlineJudge.git $GOPATH/src/GoOnlineJudge
+git clone https://github.com/ZJGSU-ACM/RunServer.git $GOPATH/src/RunServer
+git clone https://github.com/ZJGSU-ACM/vjudger.git $GOPATH/src/vjudger
 git clone https://github.com/sakeven/restweb.git $GOPATH/src/restweb
 ```
 
