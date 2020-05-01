@@ -71,14 +71,22 @@ curl -sSL https://raw.githubusercontent.com/ZJGSU-ACM/GoOnlineJudge/master/insta
   + The GNU compiler Collection.
   + Get GCC from [GNU](https://gcc.gnu.org) or using following command if you are running Ubuntu
   ```bash
-  sudo apt-get install build-essential
+  sudo apt-get gcc-7 g++-7 gdb make dpkg-dev
   ``` 
 
-+ [OpenJDK](http://openjdk.java.net/)
-  + OpenJDK is Oracle's implementation of the next version of the Java SE platform.
-  + OpenJDK is used to judge Java code.
++ [AdoptOpenJDK](https://adoptopenjdk.net/)
+  + AdoptOpenJDK provides rock-solid OpenJDK binaries for the Java ecosystem and also provides infrastructure as code, and a Build farm for builders of OpenJDK, on any platform.
+  + AdoptOpenJDK is used to judge Java code.
+  + hotspot has a better cpu performance than openj9.
   ```bash
-  sudo apt-get install openjdk-7-jdk
+  sudo apt-get install adoptopenjdk-8-hotspot
+  ```
+
++ [Python](https://www.python.org/)
+  + Python2 and Python3 is used to judge Python code.
+  + Use virtualenv to create a clean environment.
+  ```bash
+  sudo apt-get install python python-virtualenv python3 python3-virtualenv
   ```
 
 + iconv-go
@@ -90,12 +98,29 @@ curl -sSL https://raw.githubusercontent.com/ZJGSU-ACM/GoOnlineJudge/master/insta
 
 #### Install
 
-Obtain latest version via `git`, source codes will be in your $GOPATH/src. 
+Create Python2 and Python3 Virtual Environment
 ```bash
-git clone https://github.com/ZJGSU-ACM/GoOnlineJudge.git $GOPATH/src/GoOnlineJudge
-git clone https://github.com/ZJGSU-ACM/RunServer.git $GOPATH/src/RunServer
-git clone https://github.com/ZJGSU-ACM/vjudger.git $GOPATH/src/vjudger
-git clone https://github.com/sakeven/restweb.git $GOPATH/src/restweb
+mkdir -p /usr/local/cjudger/venv/
+virtualenv --no-setuptools --no-pip --no-wheel -p /usr/bin/python2 /usr/local/cjudger/venv/py2
+virtualenv --no-setuptools --no-pip --no-wheel -p /usr/bin/python3 /usr/local/cjudger/venv/py3
+ln -s /usr/local/cjudger/venv/py2/bin/python2 /usr/local/cjudger/py2
+ln -s /usr/local/cjudger/venv/py3/bin/python3 /usr/local/cjudger/py3
+```
+
+Enable Golang Module and set Module Proxy
+```bash
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn
+```
+
+Obtain latest version via `git` and `go get`, source codes will be in your $GOPATH/src. 
+```bash
+mkdir -p $GOPATH/src/github.com/ZJGSU-ACM
+cd github.com/ZJGSU-ACM
+git clone https://github.com/ZJGSU-ACM/restweb.git
+git clone https://github.com/ZJGSU-ACM/vjudger.git
+git clone https://github.com/ZJGSU-ACM/GoOnlineJudge.git
+git clone https://github.com/ZJGSU-ACM/RunServer.git
 ```
 
 ```bash
@@ -124,9 +149,10 @@ mkdir $OJ_HOME/log
 Make sure you have these directories in your $GOPATH/src:
 
 ```
-github.com/  
-GoOnlineJudge/  
-RunServer/  
+github.com/ZJGSU-ACM/restweb/
+github.com/ZJGSU-ACM/GoOnlineJudge/
+github.com/ZJGSU-ACM/RunServer/
+github.com/ZJGSU-ACM/vjudge/   
 gopkg.in/  
 restweb/  
 ```
@@ -141,19 +167,22 @@ log/
 
 Now, it's time for compilation.
 ```bash
-cd $GOPATH/src/restweb
+cd $GOPATH/src/github.com/ZJGSU-ACM/restweb
 go install ./...
 cd $GOPATH/src
-restweb build GoOnlineJudge
-cd $GOPATH/src/RunServer
+restweb build github.com/ZJGSU-ACM/GoOnlineJudge
+cd $GOPATH/src/github.com/ZJGSU-ACM/RunServer
 ./make.sh
 ```
 
-Start OJ
+Start OJ Web
 ```bash
-RunServer&
 cd $GOPATH/src
-restweb run GoOnlineJudge &
+restweb run GoOnlineJudge
+```
+Start Judge
+```bash
+RunServer
 ```
 Now,you can visit OJ on [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
@@ -174,6 +203,8 @@ Now,you can visit OJ on [http://127.0.0.1:8080](http://127.0.0.1:8080).
 + clarkzjw
 
 + rex-zed
+
++ happier233
 
 ## Roadmap
 + Binary packaging on mainstream distributions
