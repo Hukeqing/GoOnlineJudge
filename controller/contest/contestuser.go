@@ -1,7 +1,7 @@
 package contest
 
 import (
-	"GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
 	"restweb"
 )
 

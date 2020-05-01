@@ -1,7 +1,7 @@
 package model
 
 import (
-	"GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
 )
 
 func init() {

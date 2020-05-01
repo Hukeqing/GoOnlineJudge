@@ -4,11 +4,11 @@ import (
 	"log"
 	"restweb"
 
-	_ "GoOnlineJudge/schedule"
+	_ "github.com/ZJGSU-ACM/GoOnlineJudge/schedule"
 
-	"GoOnlineJudge/controller"
-	"GoOnlineJudge/controller/admin"
-	"GoOnlineJudge/controller/contest"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/controller"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/controller/admin"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/controller/contest"
 )
 
 func main() {

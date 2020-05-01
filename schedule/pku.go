@@ -1,7 +1,7 @@
 package schedule
 
 import (
-	"GoOnlineJudge/model"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/model"
 	"html/template"
 	"io/ioutil"
 	"log"

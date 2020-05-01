@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"GoOnlineJudge/class"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
 	"restweb"
 )
 

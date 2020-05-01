@@ -1,8 +1,8 @@
 package model
 
 import (
-	"GoOnlineJudge/config"
-	"GoOnlineJudge/model/class"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/model/class"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 	"html/template"

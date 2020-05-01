@@ -1,7 +1,7 @@
 package class
 
 import (
-	"GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
 	"html/template"
 	"io/ioutil"
 	"restweb"

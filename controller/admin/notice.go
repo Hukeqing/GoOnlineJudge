@@ -1,7 +1,7 @@
 package admin
 
 import (
-	"GoOnlineJudge/class"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
 	"html/template"
 	"net/http"
 	"os"

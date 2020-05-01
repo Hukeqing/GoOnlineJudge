@@ -1,8 +1,8 @@
 package schedule
 
 import (
-	"GoOnlineJudge/config"
-	"GoOnlineJudge/model"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/model"
 	"time"
 )
 

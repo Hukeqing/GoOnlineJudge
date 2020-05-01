@@ -1,8 +1,8 @@
 package admin
 
 import (
-	"GoOnlineJudge/class"
-	"GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
 
 	"restweb"
 

@@ -1,10 +1,10 @@
 package admin
 
 import (
-	"GoOnlineJudge/class"
-	"GoOnlineJudge/config"
-	"GoOnlineJudge/model"
 	"encoding/json"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/model"
 	"net/http"
 	"restweb"
 	"strconv"

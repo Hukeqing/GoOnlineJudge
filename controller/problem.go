@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"GoOnlineJudge/class"
-	"GoOnlineJudge/config"
-	"GoOnlineJudge/model"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/model"
 
 	"encoding/json"
 	"net/http"
