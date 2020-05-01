@@ -3,9 +3,9 @@ package main
 import (
 	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
 	"github.com/ZJGSU-ACM/GoOnlineJudge/model"
+	"github.com/ZJGSU-ACM/restweb"
 	"html/template"
 	"net/http"
-	"restweb"
 	"strconv"
 	"strings"
 	"time"

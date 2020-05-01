@@ -3,7 +3,7 @@ package admin
 import (
 	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
 
-	"restweb"
+	"github.com/ZJGSU-ACM/restweb"
 
 	"encoding/json"
 	"io"

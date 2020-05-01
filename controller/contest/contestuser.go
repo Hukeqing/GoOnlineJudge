@@ -2,7 +2,7 @@ package contest
 
 import (
 	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
-	"restweb"
+	"github.com/ZJGSU-ACM/restweb"
 )
 
 //@URL: /contests/(\d+)/password @method: GET

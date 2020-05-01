@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/ZJGSU-ACM/restweb"
 	"log"
-	"restweb"
 
 	_ "github.com/ZJGSU-ACM/GoOnlineJudge/schedule"
 

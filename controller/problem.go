@@ -6,8 +6,8 @@ import (
 	"github.com/ZJGSU-ACM/GoOnlineJudge/model"
 
 	"encoding/json"
+	"github.com/ZJGSU-ACM/restweb"
 	"net/http"
-	"restweb"
 	"strconv"
 	"strings"
 )

@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
-	"restweb"
+	"github.com/ZJGSU-ACM/restweb"
 )
 
 type FAQController struct {

@@ -4,7 +4,7 @@ import (
 	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
 	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
 
-	"restweb"
+	"github.com/ZJGSU-ACM/restweb"
 
 	"io"
 	"net/http"

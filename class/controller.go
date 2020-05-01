@@ -2,9 +2,9 @@ package class
 
 import (
 	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/restweb"
 	"html/template"
 	"io/ioutil"
-	"restweb"
 	"strconv"
 )
 

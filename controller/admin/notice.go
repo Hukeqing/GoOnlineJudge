@@ -2,10 +2,10 @@ package admin
 
 import (
 	"github.com/ZJGSU-ACM/GoOnlineJudge/class"
+	"github.com/ZJGSU-ACM/restweb"
 	"html/template"
 	"net/http"
 	"os"
-	"restweb"
 )
 
 type AdminNotice struct {
