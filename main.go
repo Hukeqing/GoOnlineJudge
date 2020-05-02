@@ -1,14 +1,12 @@
 package main
 
 import (
+	"github.com/ZJGSU-ACM/GoOnlineJudge/controller"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/controller/admin"
+	"github.com/ZJGSU-ACM/GoOnlineJudge/controller/contest"
+	_ "github.com/ZJGSU-ACM/GoOnlineJudge/schedule"
+	"github.com/ZJGSU-ACM/restweb"
 	"log"
-	"restweb"
-
-	_ "GoOnlineJudge/schedule"
-
-	"GoOnlineJudge/controller"
-	"GoOnlineJudge/controller/admin"
-	"GoOnlineJudge/controller/contest"
 )
 
 func main() {

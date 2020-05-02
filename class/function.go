@@ -1,9 +1,8 @@
 package class
 
 import (
-	"GoOnlineJudge/config"
-	"restweb"
-
+	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
+	"github.com/ZJGSU-ACM/restweb"
 	"strconv"
 	"time"
 )
