@@ -26,4 +26,4 @@ RUN cd $GOPATH/src && restweb build github.com/ZJGSU-ACM/GoOnlineJudge
 
 EXPOSE 8080
 
-CMD restweb run github.com/ZJGSU-ACM/GoOnlineJudge
+CMD cd github.com/ZJGSU-ACM/GoOnlineJudge; $GOPATH/bin/GoOnlineJudge
