@@ -1,8 +1,8 @@
 package class
 
 import (
-	"github.com/ZJGSU-ACM/GoOnlineJudge/config"
-	"github.com/ZJGSU-ACM/restweb"
+	"GoOnlineJudge/config"
+	"restweb"
 
 	"strconv"
 	"time"
@@ -11,7 +11,7 @@ import (
 var specialArr = []string{"Standard", "Special"}
 var judgeArr = []string{"Pengding", "Running & Judging", "Compile Error", "Accepted", "Runtime Error",
 	"Wrong Answer", "Time Limit Exceeded", "Memory Limit Exceeded", "Output Limit Exceeded", "Presentation Error", "System Error"}
-var languageArr = []string{"None", "C", "C++", "Java"}
+var languageArr = []string{"None", "C", "C++", "Java","Python2","Python3"}
 var encryptArr = []string{"None", "Public", "Private", "Password"}
 var privilegeArr = []string{"None", "Primary User", "Teacher", "Admin"}
 

@@ -60,7 +60,8 @@
         <option value="1" {{if eq $compiler_id "1"}}selected="selected"{{end}}>C</option>
         <option value="2" {{if eq $compiler_id "2"}}selected="selected"{{end}}>C++</option>
         <option value="3" {{if eq $compiler_id "3"}}selected="selected"{{end}}>Java</option>
-		<option value="4" {{if eq $compiler_id "4"}}selected="selected"{{end}}>Python</option>
+	<option value="4" {{if eq $compiler_id "4"}}selected="selected"{{end}}>Python2</option>
+        <option value="5" {{if eq $compiler_id "5"}}selected="selected"{{end}}>Python3</option>
       </select>
       <font  id="warning" color="red"></font>
     </div>
