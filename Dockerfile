@@ -1,21 +1,28 @@
-FROM golang:1.4.2
-MAINTAINER Sakeven "sakeven.jiang@daocloud.io"
+FROM golang:1.14.2
+MAINTAINER Happier233 "happier233@qq.com"
 
 ENV OJ_HOME $GOPATH/src
+ENV DATA_PATH $OJ_HOME/Data
+ENV LOG_PATH $OJ_HOME/log
+ENV RUN_PATH $OJ_HOME/run
 
 WORKDIR $GOPATH/src/
 
 RUN mkdir -p $OJ_HOME/log
 
-ADD . $GOPATH/src/GoOnlineJudge
+RUN mkdir -p $GOPATH/src/github.com/ZJGSU-ACM
+ADD . $GOPATH/src/github.com/ZJGSU-ACM/GoOnlineJudge
 
 # Get dependence
-RUN git clone https://github.com/sakeven/restweb.git $GOPATH/src/restweb
-RUN go get -t GoOnlineJudge
+RUN git clone --depth=1 https://github.com/ZJGSU-ACM/restweb.git $GOPATH/src/github.com/ZJGSU-ACM/restweb
+
+# Enable Go Module
+ENV GO111MODULE=on
+ENV GOPROXY=https://goproxy.cn
 
 # Build OJ
-RUN cd $GOPATH/src/restweb/restweb && go install
-RUN cd $GOPATH/src && restweb build GoOnlineJudge
+RUN cd $GOPATH/src/github.com/ZJGSU-ACM/restweb/restweb && go install
+RUN cd $GOPATH/src && restweb build github.com/ZJGSU-ACM/GoOnlineJudge
 
 EXPOSE 8080
 
