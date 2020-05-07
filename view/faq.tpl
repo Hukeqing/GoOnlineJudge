@@ -15,45 +15,45 @@
           	<td>系统还没有评测到这个提交，请稍候</td>
         </tr>
         <tr>
-        	<td><button type="button" class="btn btn-primary btn-xs" style="pointer-events:none">Running&Judging</button></td>   
+        	<td><button type="button" class="btn btn-primary btn-xs" style="pointer-events:none">Running&Judging</button></td>
         	<td>评测系统正在评测，稍候会有结果</td>
         </tr>
         <tr>
-        	<td><button type="button" class="btn btn-ce btn-xs" style="pointer-events:none">Compile Error</button></td>         
+        	<td><button type="button" class="btn btn-ce btn-xs" style="pointer-events:none">Compile Error</button></td>
          	<td>您提交的代码无法完成编译</td>
         </tr>
         <tr>
-        	<td><button type="button" class="btn btn-danger btn-xs" style="pointer-events:none">Accepted</button></td>    
+        	<td><button type="button" class="btn btn-danger btn-xs" style="pointer-events:none">Accepted</button></td>
          	<td>恭喜！您通过了这道题</td>
         </tr>
         <tr>
         	<td><button type="button" class="btn btn-success btn-xs" style="pointer-events:none">Presentation Error</button></td>
         	<td>您的程序输出的格式不符合要求（比如空格和换行与要求不一致）</td>
-        </tr> 
+        </tr>
         <tr>
           	<td><button type="button" class="btn btn-success btn-xs" style="pointer-events:none">Runtime Error</button></td>
           	<td>您的程序发生运行错误，可能是数组越界，堆栈溢出（比如，递归调用层数太多）等情况引起</td>
-        </tr> 
+        </tr>
         <tr>
           	<td><button type="button" class="btn btn-success btn-xs" style="pointer-events:none">Wrong Answer</button></td>
           	<td>您的程序未能对评测系统的数据返回正确的结果，即答案错误</td>
-        </tr> 
+        </tr>
         <tr>
           	<td><button type="button" class="btn btn-success btn-xs" style="pointer-events:none">Time Limit Exceeded</button></td>
           	<td>您的程序未能在规定时间内运行结束</td>
-        </tr> 
+        </tr>
         <tr>
           	<td><button type="button" class="btn btn-success btn-xs" style="pointer-events:none">Memory Limit Exceeded</button></td>
           	<td>您的程序使用了超过限制的内存</td>
-        </tr> 
+        </tr>
         <tr>
           	<td><button type="button" class="btn btn-success btn-xs" style="pointer-events:none">Output Limit Exceeded</button></td>
           	<td>您的程序输出的内容超出限制，可能是输出部分陷入无限循环引起</td>
-        </tr> 
+        </tr>
         <tr>
           	<td><button type="button" class="btn btn-success btn-xs" style="pointer-events:none">System Error</button></td>
           	<td>评测系统出现了错误，竞赛中系统将不会记录罚时</td>
-        </tr> 
+        </tr>
   </tbody>
 </table>
 <style>
@@ -98,7 +98,7 @@ body pre>code
   margin:0;
   padding:0;
   white-space:pre;
-} 
+}
 body pre code,body pre tt
 {
   background-color:transparent;
@@ -138,39 +138,54 @@ body pre code,body pre tt
 <hr>
 <h4>gcc for C</h4>
 <li>版本</li>
-<pre><code>gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2
-Copyright (C) 2013 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  
-There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+<pre><code>gcc (Debian 8.3.0-6) 8.3.0
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 </code></pre>
 <li>编译运行选项</li>
-<pre><code>gcc Main.c -o Main -Wall -lm --static -std=c99 -DONLINE_JUDGE && ./Main</code></pre>
-<hr>
+<pre><code>gcc Main.c -o Main -Wall -O2 -lm --static -std=c99 -DONLINE_JUDGE && ./Main</code></pre>
 
+<hr>
 <h4>g++ for C++</h4>
 <li>版本</li>
-<pre><code>g++ (Ubuntu 4.8.2-19ubuntu1) 4.8.2
-Copyright (C) 2013 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  
-There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+<pre><code>g++ (Debian 8.3.0-6) 8.3.0
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 </code></pre>
 <li>编译运行选项</li>
-<pre><code>g++ Main.cc -o Main -Wall -lm --static -std=c++0x -DONLINE_JUDGE && ./Main</code></pre>
-<hr>
+<pre><code>g++ Main.cc -o Main -Wall -O2 -lm --static -std=c++11 -DONLINE_JUDGE && ./Main</code></pre>
 
+<hr>
 <h4>OpenJDK for Java</h4>
 <li>版本</li>
-<pre><code>java version "1.7.0_55"
-OpenJDK Runtime Environment (IcedTea 2.4.7) (7u55-2.4.7-1ubuntu1)
-OpenJDK Client VM (build 24.51-b03, mixed mode, sharing)
+<pre><code>openjdk version "1.8.0_252"
+OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_252-b09)
+OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
 </code></pre>
 <li>编译运行选项</li>
 <pre><code>javac -J-Xms32m -J-Xmx256m Main.java &&/usr/bin/java -Xms128M -Xms512M -DONLINE_JUDGE=true Main</code></pre>
 
+<hr>
+<h4>python2</h4>
+<li>版本</li>
+<pre><code>python2.7
+</code></pre>
+
+<hr>
+<h4>python3</h4>
+<li>版本</li>
+<pre><code>python3.7
+</code></pre>
+
 <h2>其他</h2>
 <p>在考试或比赛中遇到其他问题请咨询现场工作人员</p><br>
-<p>如果对于Online Judge有任何需求或者bug report，请在Github发起一个<a href="https://github.com/ZJGSU-Open-Source/GoOnlineJudge/issues/new" target="_blank">issue</a></p><br>
+<p>如果对于Online Judge有任何需求或者bug report，请在Github发起一个<a href="https://github.com/ZJGSU-ACM/GoOnlineJudge/issues/new" target="_blank">issue</a></p><br>
 
 <h2>维护人员</h2>
-<a href="https://github.com/sakeven" target="_blank">@sakeven</a> <a href="https://github.com/JinweiClarkChao" target="_blank">@JinweiClarkChao</a> <a href="https://github.com/rex-zsd" target="_blank">@rex-zsd</a>
+<a href="https://github.com/sakeven" target="_blank">@sakeven</a>
+<a href="https://github.com/JinweiClarkChao" target="_blank">@JinweiClarkChao</a>
+<a href="https://github.com/rex-zsd" target="_blank">@rex-zsd</a>
+<a href="https://github.com/happier233" target="_blank">@happier233</a>
 {{end}}
