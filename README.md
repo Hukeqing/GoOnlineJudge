@@ -71,7 +71,7 @@ curl -sSL https://raw.githubusercontent.com/ZJGSU-ACM/GoOnlineJudge/master/insta
   + The GNU compiler Collection.
   + Get GCC from [GNU](https://gcc.gnu.org) or using following command if you are running Ubuntu
   ```bash
-  sudo apt-get gcc-7 g++-7 gdb make dpkg-dev
+  sudo apt-get gcc-8 g++-8 gdb make dpkg-dev
   ``` 
 
 + [AdoptOpenJDK](https://adoptopenjdk.net/)
