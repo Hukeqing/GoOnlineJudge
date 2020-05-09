@@ -108,9 +108,15 @@
       <div id="pageFooter" class="center">
         <hr class="nomarginbottom">
         <div id="footerContainer">
-          <center><div class="center">ZJGSU Online Judge Version 15.09.24 @ <a href="https://github.com/ZJGSU-ACM/GoOnlineJudge" target="_blank">Github</a></div></center>
-            <center><div class="center">Copyright © 2013-2015 ZJGSU ACM Club</div></center>
-            <center> <div class="center">Developer: <a href="https://github.com/memelee" target="_blank">@memelee</a> <a href="https://github.com/sakeven" target="_blank">@sakeven</a> <a href="https://github.com/JinweiClarkChao" target="_blank">@JinweiClarkChao</a> <a href="https://github.com/rex-zsd" target="_blank">@rex-zsd</a></div></center>
+          <center><div class="center">ZJGSU Online Judge Version 16.01.01 @ <a href="https://github.com/ZJGSU-ACM/GoOnlineJudge" target="_blank">Github</a></div></center>
+            <center><div class="center">Copyright © 2013-2020 ZJGSU ACM Club</div></center>
+            <center> <div class="center">Developer:
+                    <a href="https://github.com/memelee" target="_blank">@memelee</a>
+                    <a href="https://github.com/sakeven" target="_blank">@sakeven</a>
+                    <a href="https://github.com/JinweiClarkChao" target="_blank">@JinweiClarkChao</a>
+                    <a href="https://github.com/rex-zsd" target="_blank">@rex-zsd</a>
+                    <a href="https://github.com/happier233" target="_blank">@happier233</a>
+                </div></center>
         </div>
       </div>
       </div>
