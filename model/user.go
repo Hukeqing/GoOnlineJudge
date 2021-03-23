@@ -266,7 +266,7 @@ func (this *UserModel) Insert(one User) error {
 	one.Submit = 0
 	one.Status = config.StatusAvailable
 	one.Create = this.GetTime()
-	one.ShareCode = true
+	one.ShareCode = false
 
 	err = this.DB.C("User").Insert(&one)
 	if err != nil {
