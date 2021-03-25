@@ -60,7 +60,7 @@ type SolutionModel struct {
 
 // 查询指定sid的solution的所有详细信息
 func (this *SolutionModel) Detail(sid int) (*Solution, error) {
-	logger.Debug("Server SolutionModel Detail")
+	logger.Debug("Server SolutionModel Detail" + strconv.Itoa(sid))
 	err := this.OpenDB()
 	if err != nil {
 		return nil, DBErr
