@@ -116,6 +116,7 @@
                     <a href="https://github.com/JinweiClarkChao" target="_blank">@JinweiClarkChao</a>
                     <a href="https://github.com/rex-zsd" target="_blank">@rex-zsd</a>
                     <a href="https://github.com/happier233" target="_blank">@happier233</a>
+                    <a href="https://github.com/Hukeqing" target="_blank">@mauve</a>
                 </div></center>
         </div>
       </div>
